@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive WEb Design Using Grid View</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .title{
+            background-color: rgb(151, 127, 19);
+            padding: 5px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .nav-menu a{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            padding: 10px;
+            /* justify-content: center; */
+            background-color: rgb(109, 122, 233);
+            color: white;
+        }
+
+        .details{
+            background-color: grey;
+            padding: 10px;
+            text-align: justify;
+        }
+        .aside{
+            background-color: rgb(179, 179, 255);
+            padding: 10px;
+        }
+
+        .footer{
+            background-color: rgb(16, 16, 12);
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        [class*="col-"]{
+            float: left;
+            /* padding: 10px; */
+        }
+
+        .container::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @media screen and (max-width:768px) {
+            /* .nav-menu, .details, .aside{
+                width: 100%;
+            } */
+
+            [class*="col-"]{
+                width: 100%;
+            }
+            
+            .nav-menu a{
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+            <h2>Fardous Tahsin</h2>
+    </div>
+    <div class="container">
+        <div class="nav-menu col-2">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="details col-7">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quibusdam repellat, nostrum eligendi veritatis molestiae placeat, tenetur consequuntur est voluptas soluta quia. Beatae hic, itaque laudantium illo necessitatibus odio adipisci eius ratione deleniti, modi dignissimos quasi a, assumenda repellendus quo maiores sunt. Placeat accusamus, labore quaerat voluptates ipsam iure repudiandae quisquam autem consectetur omnis repellendus id, eos laudantium totam. Totam veniam deleniti, dolores velit, nemo itaque nobis, assumenda sunt accusantium doloremque dignissimos nisi veritatis! Voluptate cupiditate eos repellat natus. Repudiandae fuga ea quos voluptates nihil, dolorem doloribus aut consectetur iste! Voluptate quae velit repellat laudantium aut quo magni facilis eos quasi, asperiores minima. Temporibus odio aut debitis omnis alias voluptate aspernatur, ab facere voluptatibus totam maxime deserunt corrupti soluta? Voluptatibus adipisci recusandae quas dignissimos laudantium, suscipit, vitae tenetur autem rem quae saepe? Delectus, corporis? Repellat, architecto autem tempore officia veniam, reiciendis voluptatibus esse natus eos sint dolores. Facilis omnis mollitia earum atque minus quaerat vero. Consectetur facere tempore doloribus corporis non deserunt minus optio consequatur eius, labore suscipit nisi ex, distinctio a dicta voluptatem eos alias laborum tempora hic dolore aliquam asperiores velit in. Cumque, facilis, est quo distinctio reprehenderit vero ipsam sed quidem ipsa perspiciatis dolorem tempora consequatur numquam. Pariatur, labore totam? Dolore, nesciunt ut possimus, fugit vel consequuntur rerum repellat numquam dicta totam voluptate modi nobis id earum illo unde neque accusamus. A autem, vero veniam pariatur voluptas ullam odio enim tenetur provident corporis placeat commodi neque optio officiis repellat, consequuntur molestias illo voluptates eius fuga sit iusto unde quo deserunt! Eveniet, 
+                assumenda incidunt a aliquam voluptatum</p>
+        </div>
+
+        <div class="aside col-3">
+            <h3>Aside Section</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+
+            <h3>Aside Section</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+
+            <h3>Aside Section</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+
+            <h3>Aside Section</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+            <p>copyright @Fardous_Tahsin-2026</p>
+    </div>
+</body>
+</html>
